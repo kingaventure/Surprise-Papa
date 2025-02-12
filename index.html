@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Joyeux Anniversaire Nicolas</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: #f0f8ff;
+            color: #333;
+        }
+        h1 {
+            color: #ff6347;
+        }
+        .content {
+            margin: 50px auto;
+            padding: 20px;
+            max-width: 600px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .message {
+            font-size: 1.2em;
+            margin: 20px 0;
+        }
+        .audio-button {
+            margin-top: 20px;
+            padding: 10px 20px;
+            font-size: 1em;
+            background-color: #ff6347;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+        }
+        .audio-button:hover {
+            background-color: #ff4500;
+        }
+    </style>
+</head>
+<body>
+    <div class="content">
+        <h1>Joyeux Anniversaire Nicolas !</h1>
+        <p class="message">Cher Papa,</p>
+        <p class="message">Nous te souhaitons un merveilleux anniversaire rempli de joie et de bonheur. Merci pour tout ce que tu fais pour nous. Nous t'aimons beaucoup !</p>
+        <p class="message">Avec tout notre amour,</p>
+        <p class="message">[Votre Nom]</p>
+        <button class="audio-button" onclick="playAudio()">Écouter l'audio</button>
+        <audio id="birthdayAudio" src="path/to/your/audio/file.mp3"></audio>
+    </div>
+    <script>
+        function playAudio() {
+            var audio = document.getElementById('birthdayAudio');
+            audio.play();
+        }
+    </script>
+</body>
+</html>
